@@ -1,4 +1,4 @@
-/*Video URL: https://www.youtube.com/watch?v=YzRDHxbw1RU - Minute: 00:34:00*/
+/*Video URL: https://www.youtube.com/watch?v=YzRDHxbw1RU - Minute: 00:43:35*/
 
 
 /*=============== GOOGLE FONTS ===============*/
@@ -247,6 +247,16 @@ input {
   right: 0;
 }
 
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+  color: var(--title-color);
+}
+
 /*=============== HOME ===============*/
 .home__img{
   position: absolute;
@@ -332,10 +342,75 @@ input {
 }
 
 /*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+}
 
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button--flex {
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.button--link {
+  background: none;
+  padding: 0;
+}
+
+.button--link:hover {
+  background: none;
+}
 
 /*=============== ABOUT ===============*/
+.about__data {
+  text-align: center;
+}
 
+.about__container{
+  row-gap: 2.5rem;
+}
+
+.about__description {
+  margin-bottom: var(--mb-2);
+}
+
+.about__img {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__img-overlay {
+  overflow: var(--img-hidden);
+}
+
+.about__img-one{
+  width: 130px;
+}
+
+.about__img-two {
+  width: 180px;
+}
+
+.about__img-one,
+.about__img-two{
+  transition: var(--img-transition);
+}
+
+.about__img-one:hover,
+.about__img-two:hover{
+  transform: var(--img-scale);
+}
 
 /*=============== DISCOVER ===============*/
 
